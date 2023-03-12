@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 const landingpage = () => {
   return (
     <div>
-        <div className='text-center '>
+        <div className='text-center mt-48'>
             <div className='text-center'>
-            <img className="  "src="https://lh5.googleusercontent.com/Y85G7YZH0TSlaX2M2deUzLc6Z97qiVUtiXBj62KOULYAsSdUamnFeH_7Ht3AFgObu5FzKysKIf0_74o=w1349-h625"alt="shopping"/>
+           
             </div>
           
             <h1 className='text-6xl text-lime-600 font-bold'>SAYLANI WELFARE</h1>

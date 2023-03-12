@@ -2,7 +2,7 @@ import React from 'react'
 import { Outlet} from "react-router-dom";
 import { useState } from "react";
 import { Link } from 'react-router-dom';
-const Navbar = () => {
+const SeaFood = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -10,8 +10,8 @@ const Navbar = () => {
   };
 
   return (
-    <>
-    <nav className="flex items-center justify-between flex-wrap font-serif  p-2 mb-3">
+    <div>
+       <nav className="flex items-center justify-between flex-wrap font-serif  p-2 mb-3">
       <div className="flex items-end flex-shrink-0 text-black mr-6 bg-gray-50">
         <a href="https://cdn.imgbin.com/15/25/4/imgbin-shopify-e-commerce-logo-web-design-design-qXjMADSvFauX9EM7aNwbpi2UK.jpg">
         <h1 className='text-xl text-lime-600 font-bold'>Saylani Welfare</h1>
@@ -62,22 +62,9 @@ const Navbar = () => {
         
       </div>
 <Outlet/>
-    </nav><br/><br/>
-     <h1 className='text-3xl text-center text-lime-600 font-bold'>Chose your Favourite Fashion Category</h1>
-     <h1 className='text-xs text-center text-sky-900 font-bold'>You can choose More Than one</h1><br/><br/><br/>
-<div className='columns-2 w-96 text-center mx-80'>
-<div><button className='border-2 w-32 h-12 rounded-lg shadow-2xl hover:bg-lime-600 hover:text-white'><Link to="/Fruits">Fruits</Link></button></div><br/>
-<div><button className='border-2 w-32 h-12 rounded-lg shadow-2xl hover:bg-lime-600 hover:text-white'><Link to="/Meat">Meat</Link></button></div><br/>
-<div><button className='border-2 w-32 h-12 rounded-lg shadow-2xl hover:bg-lime-600 hover:text-white'><Link to="/Vegetables">Vegetables</Link></button></div><br/>
-<div><button className='border-2 w-32 h-12 rounded-lg shadow-2xl hover:bg-lime-600 hover:text-white'><Link to="/Oil">Oil</Link></button></div><br/>
-<div><button className='border-2 w-32 h-12 rounded-lg shadow-2xl hover:bg-lime-600 hover:text-white'><Link to="/Dry Fruits">Dry Fruits</Link></button></div><br/>
-<div><button className='border-2 w-32 h-12 rounded-lg shadow-2xl hover:bg-lime-600 hover:text-white'><Link to="/Sea Food">Sea Food</Link></button></div><br/>
-</div>
-<button className='border-2 mx-96 w-64 h-12 rounded-lg text-xl shadow-2xl text-white font-bold bg-lime-600 mt-20'><Link to="">Continue</Link></button>
-</>
-  );
-};
+    </nav>
+    </div>
+  )
+}
 
-export default Navbar;
-
-
+export default SeaFood
